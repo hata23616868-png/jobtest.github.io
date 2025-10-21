@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>24タイプ別職業診断</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>24タイプ別職業診断</h1>
+      <p class="muted">50問であなたにぴったりの職業タイプを診断します🐾</p>
+    </header>
+
+    <main class="card">
+      <div class="progress-label" id="progressLabel">0 / 50（0%）</div>
+      <div class="progress"><i id="progressBar"></i></div>
+
+      <div id="questionText">読み込んでいます...</div>
+      <div id="choices" class="choices"></div>
+
+      <p id="warning" class="warning">⚠️ 未回答です。</p>
+
+      <div class="btn-row">
+        <button id="prevBtn" class="ghost">戻る</button>
+        <button id="nextBtn">次へ</button>
+        <button id="finishBtn" style="display:none">結果を見る</button>
+      </div>
+
+      <section id="resultArea" style="display:none;margin-top:20px">
+        <h3>あなたの診断結果🐶</h3>
+        <div id="topResults"></div>
+      </section>
+    </main>
+
+    <footer>© 24タイプ別職業診断</footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
